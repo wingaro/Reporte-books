@@ -1,0 +1,13 @@
+<div class="container">
+
+  <mat-card>
+    <div style="display: block">
+      <canvas id="graphics" baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+      </canvas>
+    </div>
+    <hr>
+    <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+  </mat-card>
+
+</div>
